@@ -2,11 +2,9 @@
 The project is a Capstone Project from Udacity's Front End Web Design Nanodegree
 
 ## Description
-This project stimulates a Weather forecast app which predicts the weather in the travel destination choosing by user. The data is powered by:
-
-* [Geonames API](http://www.geonames.org/) - gets location information: longitude, latitude when user input city name
-* [Weatherbit API](https://www.weatherbit.io/) - gets weather forecast based on the location data
-* [Pixabay API](https://pixabay.com/)  - gets photo for the location
+This project stimulates a Weather forecast app which predicts the weather in the travel destination choosing by user. 
+- When open the web app, user should enter the destination city, the departure date, return date, the unit to return weather parameter unit will be set to Metric(℃, m/s, mm) as default, otherwise user can choose Imperial( ℉, mph, in) unit. 
+- When clicking the submit button, the web will show the image of the city in the left hand side and the forecast weather display below.
 
 ## Folder description:
 - __test__/ : unit test
@@ -15,7 +13,7 @@ This project stimulates a Weather forecast app which predicts the weather in the
 - package.json: module dependencies in set up environment
 - webpack.dev/prod.js: running in development/ production environment
 
-## Prerequisite
+## Prerequisite for developer
 This project runs on a local server and used Node. If you don't have *Node* already installed on your local machine, you can download it [**here**](https://nodejs.org/en/download/).
 
 You must have an API key for weatherbit and pixabay, for geonames, you should fill our username, your account need to be assign for web server. See more in the Geonames documentation
@@ -35,7 +33,7 @@ npm run start
 ```
 To load the page, set your browser's address bar to:
 ```
-http://localhost:8081/
+http://localhost:5689/
 ```
 The app takes 4 user parameters:
 
@@ -49,4 +47,10 @@ The app takes 4 user parameters:
 
 Press the **Submit** button when you completely enter the valid data
 Waite for moment for the data to be loaded and displayed. The photo displayed the scence of the destination. You can press Change Photo button to get another photo. You can press Clean Page button to clear the page
+## Unit Test
+- The unit test will test 2 cases: for API response (Geonames) and Storing data. When running test, make sure you keep the web app in running (npm run start) and open a new terminal, the test will be successfully. The reason to keep the web app running is that here the project calling API response online.
 
+```
+npm run start # in case the web app is stopped
+npm run test
+```
