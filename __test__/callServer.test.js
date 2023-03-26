@@ -14,7 +14,7 @@ describe("Test API call", () => {
             }
         }
         const response = await callServer('callgeo', responseData)
-        expect(response.geonames[0].countryName).toBe('England')
+        expect(response.geonames[0].countryName).toBe('United Kingdom')
     })
 
 })
