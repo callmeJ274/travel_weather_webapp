@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Travel Weather</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+  <div class = "container">
+    <header><h1>Travel Weather</h1></header>
+    <div class="sidebar" >
+        <form id="input-form" class="input-form">
+            <div id="destination" class="user-input">
+                <label for="destination-city">Destination City</label>
+                <input type="text" id="destination-city" placeholder="Please enter destination city">
+            </div>
+            <div id="departure" class="user-input">
+                <label for="departure-date">Departure Date</label>
+                <input type="date" id="departure-date">
+            </div>
+            <div id="return" class="user-input">
+                <label for="return-date">Return Date</label>
+                <input type="date" id="return-date">
+            </div>
+            <div id="units" class="user-input">
+                <legend>Select units:</legend>
+                <div class="radio">
+                    <label for="metric">Metric (km, etc)</label>
+                    <input type="radio" name="units" id="metric" value="metric" checked>
+                    <label for="imperial">Imperial (inch, etc)</label>
+                    <input type="radio" name="units" id="imperial" value="imperial">
+                </div>
+            </div>
+            <div id="error-message" class="error-message"></div>
+            <input type="submit" id="submit-button" class="button" value="Submit">
+            <input type="submit" id="clean-button" class="button" value="Clean Page">
+        </form>
+    </div>
+    <div class="content box">
+        <div id="location-image-container" class="location-image-container">
+            <img src="https://blog.tours4fun.com/wp-content/uploads/2019/11/shutterstock_1218765286-1.jpg"/>
+        </div> 
+    </div>
+    <section id="forecast-card-container" class="forecast-card-container"></section>
+    <footer>Powered By : 
+        <a class="api-link" href="http://www.geonames.org/">Geonames</a>
+        <a class="api-link" href="https://www.weatherbit.io/">WeatherBit</a>
+        <a class="api-link" href="https://pixabay.com/">Pixabay</a>
+    </footer>
+  </div>
+  </body>
+</html>
