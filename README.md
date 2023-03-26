@@ -48,7 +48,7 @@ The app takes 4 user parameters:
 Press the **Submit** button when you completely enter the valid data
 Waite for moment for the data to be loaded and displayed. The photo displayed the scence of the destination. You can press Change Photo button to get another photo. You can press Clean Page button to clear the page
 ## Unit Test
-- The unit test will test 2 cases: for API response (Geonames) and Storing data. When running test, make sure you keep the web app in running (npm run start) and open a new terminal, the test will be successfully. The reason to keep the web app running is that here the project calling API response online.
+- The unit test will test 2 cases: for API response (Geonames) and Storing data. When running test, make sure you keep the web app in running (npm run start) and open a new terminal, the test will be successful. The reason to keep the web app running is that here the project calling API response online.
 
 ```
 npm run start # in case the web app is stopped
